@@ -31,6 +31,90 @@
           <a href="./index.html" class="logo link"
             >Web<span class="accent">Studio</span>
           </a>
+
+          <button
+            class="nav-btn js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="nav-btn-svg" width="32" height="22">
+              <use href="./images/icons.svg#icon-hamburger"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu js-menu-container is-open">
+            <div class="mobile-menu-box">
+              <button type="button" class="menu-button js-close-menu">
+                <svg class="button-svg" width="8" height="8">
+                  <use href="./images/icons.svg#icon-close-black"></use>
+                </svg>
+              </button>
+              <nav>
+                <ul class="nav-list-menu">
+                  <li>
+                    <a class="heder-nav-menu emphasis" href="./index.html"
+                      >Studio</a
+                    >
+                  </li>
+                  <li>
+                    <a class="heder-nav-menu" href="./portfolio.html"
+                      >Portfolio</a
+                    >
+                  </li>
+                  <li>
+                    <a class="heder-nav-menu" href="">Contacts</a>
+                  </li>
+                </ul>
+              </nav>
+              <address class="contacts-menu">
+                <ul class="list-contacts-menu">
+                  <li>
+                    <a
+                      class="link-contacts-menu address"
+                      href="tel:+110001111111"
+                      >+11 (000) 111-11-11</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="email-contacts-menu address"
+                      href="mailto:info@devstudio.com"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                </ul>
+                <ul class="soc-list">
+                  <li class="soc-item">
+                    <a href="" class="soc-link"
+                      ><svg class="svg-soc" width="24" height="24">
+                        <use
+                          href="./images/icons.svg#icon-instagram"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="soc-item">
+                    <a href="" class="soc-link"
+                      ><svg class="svg-soc" width="24" height="24">
+                        <use href="./images/icons.svg#icon-twitter"></use></svg
+                    ></a>
+                  </li>
+                  <li class="soc-item">
+                    <a href="" class="soc-link"
+                      ><svg class="svg-soc" width="24" height="24">
+                        <use href="./images/icons.svg#icon-facebook"></use></svg
+                    ></a>
+                  </li>
+                  <li class="soc-item">
+                    <a href="" class="soc-link"
+                      ><svg class="svg-soc" width="24" height="24">
+                        <use href="./images/icons.svg#icon-linkedin"></use></svg
+                    ></a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </div>
+
           <ul class="nav-list">
             <li>
               <a
@@ -67,10 +151,10 @@
     </header>
 
     <main>
-      <section class="page">
+      <section class="hero">
         <div class="container">
-          <h1 class="page-title">Effective Solutions for Your Business</h1>
-          <button data-modal-open class="page-button" type="button">
+          <h1 class="hero-title">Effective Solutions for Your Business</h1>
+          <button data-modal-open class="hero-btn" type="button">
             Order Service
           </button>
         </div>
@@ -368,7 +452,7 @@
 
     <footer class="page-footer">
       <div class="footer-container container">
-        <div class="footer-container-box">
+        <div class="footer-container-box-logo">
           <a href="./index.html" class="footer-logo link"
             >Web<span class="footer-accent">Studio</span></a
           >
@@ -502,5 +586,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

@@ -606,8 +606,9 @@ input {
     width: 100%;
   }
 
-  .modal {
-    max-width: 320px;
+  .backdrop > .modal {
+    max-width: 310px;
+    max-height: 620px;
   }
 }
 
@@ -1087,29 +1088,6 @@ input {
     margin-left: 16px;
   }
 }
-
-/* ------------------------footer----------------- */
-
-/* 
-.footer-logo:active {
-  color: var(--active-color);
-}
-
-.footer-accent {
-  color: var(--light-mode-background);
-}
-
-.footer-accent:hover,
-.footer-accent:focus {
-  color: var(--link-focused);
-}
-
-.footer-accent:active {
-  color: var(--active-color);
-}
-
-
- */
 
 /*---------------------backdrop-----------------  */
 

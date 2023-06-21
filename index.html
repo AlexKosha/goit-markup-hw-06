@@ -35,13 +35,14 @@
           <button
             class="nav-btn js-open-menu"
             type="button"
-            aria-expanded="true"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
           >
             <svg class="nav-btn-svg" width="32" height="22">
               <use href="./images/icons.svg#icon-hamburger-converted"></use>
             </svg>
           </button>
-          <div class="mobile-menu is-open js-menu-container">
+          <div class="mobile-menu js-menu-container" id="mobile-menu">
             <div class="mobile-menu-box">
               <button type="button" class="menu-button js-close-menu">
                 <svg class="button-svg" width="8" height="8">
@@ -226,6 +227,7 @@
             <li class="item-device">
               <img
                 class="device-img"
+                srcset="./images/computer.jpg 1x, ./images/computer@2x.jpg 2x"
                 src="./images/computer.jpg"
                 alt="computer"
                 width="360"
@@ -235,6 +237,7 @@
             <li class="item-device">
               <img
                 class="device-img"
+                srcset="./images/phone.jpg 1x, ./images/phone@2x.jpg 2x"
                 src="./images/phone.jpg"
                 alt="phone"
                 width="360"
@@ -244,6 +247,7 @@
             <li class="item-device">
               <img
                 class="device-img"
+                srcset="./images/divice.jpg 1x, ./images/divice@2x.jpg 2x"
                 src="./images/divice.jpg"
                 alt="phone and computer"
                 width="360"
@@ -260,7 +264,12 @@
 
           <ul class="list-team">
             <li class="team-item">
-              <img src="./images/img4.jpg" alt="Designer" width="264" />
+              <img
+                srcset="./images/img4.jpg 1x, ./images/img4@2x.jpg 2x"
+                src="./images/img4.jpg"
+                alt="Designer"
+                width="264"
+              />
               <div class="container-team">
                 <h3 class="name-title">Mark Guerrero</h3>
                 <p class="name-text">Product Designer</p>
@@ -295,7 +304,12 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/img1.jpg" alt="Developer" width="264" />
+              <img
+                srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x"
+                src="./images/img1.jpg"
+                alt="Developer"
+                width="264"
+              />
               <div class="container-team">
                 <h3 class="name-title">Tom Ford</h3>
                 <p class="name-text">Frontend Developer</p>
@@ -330,7 +344,12 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/img2.jpg" alt="Marketing" width="264" />
+              <img
+                srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x"
+                src="./images/img2.jpg"
+                alt="Marketing"
+                width="264"
+              />
               <div class="container-team">
                 <h3 class="name-title">Camilla Garcia</h3>
                 <p class="name-text">Marketing</p>
@@ -365,7 +384,12 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/img3.jpg" alt="UI Designer" width="264" />
+              <img
+                srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x"
+                src="./images/img3.jpg"
+                alt="UI Designer"
+                width="264"
+              />
               <div class="container-team">
                 <h3 class="name-title">Daniel Wilson</h3>
                 <p class="name-text">UI Designer</p>

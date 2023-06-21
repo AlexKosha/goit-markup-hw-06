@@ -260,6 +260,19 @@ input {
   padding: 112px 0;
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to bottom,
+        var(--hero-background),
+        var(--hero-background)
+      ),
+      url(../images/people-office@2x.jpg);
+  }
+}
+
 .hero-title {
   font-size: 36px;
   line-height: 1.11;
@@ -607,7 +620,8 @@ input {
   }
 
   .backdrop > .modal {
-    max-width: 310px;
+    width: calc(100% - 30px);
+    /* max-width: 310px; */
     max-height: 620px;
   }
 }
@@ -698,7 +712,7 @@ input {
     display: none;
   }
 
-  .js-menu-container {
+  .mobile-menu {
     display: none;
   }
 

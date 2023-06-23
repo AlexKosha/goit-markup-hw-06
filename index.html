@@ -32,19 +32,18 @@
             >Web<span class="accent">Studio</span>
           </a>
 
-          <button
-            class="nav-btn js-open-menu"
-            type="button"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
+          <button data-menu-open class="nav-btn" type="button">
             <svg class="nav-btn-svg" width="32" height="22">
               <use href="./images/icons.svg#icon-hamburger-converted"></use>
             </svg>
           </button>
-          <div class="mobile-menu js-menu-container" id="mobile-menu">
+          <div data-menu class="mobile-menu is-hidden">
             <div class="mobile-menu">
-              <button type="button" class="menu-button js-close-menu">
+              <button
+                data-menu-close
+                type="button"
+                class="menu-button js-close-menu"
+              >
                 <svg class="button-svg" width="8" height="8">
                   <use href="./images/icons.svg#icon-close-black"></use>
                 </svg>

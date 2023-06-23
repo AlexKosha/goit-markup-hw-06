@@ -681,7 +681,7 @@ input {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -1px;
+    bottom: 2px;
     background-color: var(--link-underline);
     display: block;
     border-radius: 2px;

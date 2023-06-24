@@ -1380,6 +1380,91 @@ input {
 
 /* ------------------Button-portfolio----------------- */
 
+.scope {
+  padding: 48px 0;
+}
+
+.list-id {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.list-id-box {
+  display: flex;
+  gap: 24px;
+}
+
+.link-button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  cursor: pointer;
+  color: var(--link-focused);
+  background-color: var(--light-mode-background);
+  border: 1px solid var(--active-color);
+  border-radius: 4px;
+  padding: 8px 16px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-button:active {
+  background-color: var(--button-color);
+  color: var(--text-white-color);
+  border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.text-overlay {
+  display: none;
+}
+
+.scope-item {
+  background-color: var(--text-white-color);
+}
+
+.scope-link {
+  display: block;
+}
+
+.container-items {
+  padding: 32px 16px;
+  border: 1px solid var(--active-color);
+  border-top: none;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.scope-img {
+  width: 100%;
+}
+
+.scope-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navigate-text);
+  margin-bottom: 16px;
+}
+
+.scope-text {
+  letter-spacing: 0.02em;
+  color: var(--default-text);
+  font-size: 16px;
+  line-height: 1.5;
+}
+/* ------------------Button-portfolio----------------- */
+
 /* .scope {
   padding-top: 96px;
   padding-bottom: 120px;

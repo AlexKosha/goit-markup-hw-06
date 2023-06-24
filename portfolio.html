@@ -31,6 +31,87 @@
           <a href="./index.html" class="logo link"
             >Web<span class="accent">Studio</span>
           </a>
+
+          <button data-menu-open class="nav-btn" type="button">
+            <svg class="nav-btn-svg" width="32" height="22">
+              <use href="./images/icons.svg#icon-hamburger-converted"></use>
+            </svg>
+          </button>
+          <div data-menu class="mobile-menu is-hidden">
+            <div class="mobile-menu">
+              <button
+                data-menu-close
+                type="button"
+                class="menu-button js-close-menu"
+              >
+                <svg class="button-svg" width="8" height="8">
+                  <use href="./images/icons.svg#icon-close-black"></use>
+                </svg>
+              </button>
+              <nav>
+                <ul class="nav-list-menu">
+                  <li>
+                    <a class="heder-nav-menu" href="./index.html">Studio</a>
+                  </li>
+                  <li>
+                    <a class="heder-nav-menu emphasis" href="./portfolio.html"
+                      >Portfolio</a
+                    >
+                  </li>
+                  <li>
+                    <a class="heder-nav-menu" href="">Contacts</a>
+                  </li>
+                </ul>
+              </nav>
+              <address class="contacts-menu">
+                <ul class="list-contacts-menu">
+                  <li class="contacts-item">
+                    <a
+                      class="link-contacts-menu address"
+                      href="tel:+110001111111"
+                      >+11 (000) 111-11-11</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="email-contacts-menu address"
+                      href="mailto:info@devstudio.com"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                </ul>
+                <ul class="soc-list">
+                  <li class="soc-item">
+                    <a href="" class="soc-link"
+                      ><svg class="svg-soc">
+                        <use
+                          href="./images/icons.svg#icon-instagram"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="soc-item">
+                    <a href="" class="soc-link"
+                      ><svg class="svg-soc">
+                        <use href="./images/icons.svg#icon-twitter"></use></svg
+                    ></a>
+                  </li>
+                  <li class="soc-item">
+                    <a href="" class="soc-link"
+                      ><svg class="svg-soc">
+                        <use href="./images/icons.svg#icon-facebook"></use></svg
+                    ></a>
+                  </li>
+                  <li class="soc-item">
+                    <a href="" class="soc-link"
+                      ><svg class="svg-soc">
+                        <use href="./images/icons.svg#icon-linkedin"></use></svg
+                    ></a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </div>
+
           <ul class="nav-list">
             <li>
               <a class="heder-nav-list-item link-focus" href="./index.html"
@@ -45,11 +126,7 @@
               >
             </li>
             <li>
-              <a
-                class="nav-list-link-contacts-active heder-nav-list-item link-focus"
-                href=""
-                >Contacts</a
-              >
+              <a class="heder-nav-list-item link-focus" href="">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -75,19 +152,33 @@
         <div class="container">
           <h1 hidden>Portfolio</h1>
           <ul class="list-id">
-            <li><button class="link-button" type="button">All</button></li>
-            <li><button class="link-button" type="button">Web Site</button></li>
-            <li><button class="link-button" type="button">App</button></li>
-            <li><button class="link-button" type="button">Design</button></li>
-            <li>
-              <button class="link-button" type="button">Marketing</button>
-            </li>
+            <div class="list-id-box">
+              <li class="list-item-id">
+                <button class="link-button" type="button">All</button>
+              </li>
+              <li class="list-item-id">
+                <button class="link-button" type="button">Web Site</button>
+              </li>
+              <li class="list-item-id">
+                <button class="link-button" type="button">App</button>
+              </li>
+            </div>
+            <div class="list-id-box">
+              <li class="list-item-id">
+                <button class="link-button" type="button">Design</button>
+              </li>
+              <li class="list-item-id">
+                <button class="link-button" type="button">Marketing</button>
+              </li>
+            </div>
           </ul>
           <ul class="list-scope">
             <li class="scope-item">
               <a class="scope-link" href=""
                 ><div class="box-img">
                   <img
+                    class="scope-img"
+                    srcset="./images/bankapp.jpg 1x, ./images/bankapp@2x.jpg 2x"
                     src="./images/bankapp.jpg"
                     alt="BankApp"
                     width="360"
@@ -109,6 +200,8 @@
               <a class="scope-link" href="">
                 <div class="box-img">
                   <img
+                    class="scope-img"
+                    srcset="./images/payment.jpg 1x, ./images/payment@2x.jpg 2x"
                     src="./images/payment.jpg"
                     alt="Payment"
                     width="360"
@@ -130,6 +223,8 @@
               <a class="scope-link" href="">
                 <div class="box-img">
                   <img
+                    class="scope-img"
+                    srcset="./images/app.jpg 1x, ./images/app@2x.jpg 2x"
                     src="./images/app.jpg"
                     alt="App"
                     width="360"
@@ -151,6 +246,8 @@
               <a class="scope-link" href="">
                 <div class="box-img">
                   <img
+                    class="scope-img"
+                    srcset="./images/taxi.jpg 1x, ./images/taxi@2x.jpg 2x"
                     src="./images/taxi.jpg"
                     alt="Taxi"
                     width="360"
@@ -172,6 +269,8 @@
               <a class="scope-link" href="">
                 <div class="box-img">
                   <img
+                    class="scope-img"
+                    srcset="./images/screen.jpg 1x, ./images/screen@2x.jpg 2x"
                     src="./images/screen.jpg"
                     alt="Screen"
                     width="360"
@@ -193,6 +292,8 @@
               <a class="scope-link" href=""
                 ><div class="box-img">
                   <img
+                    class="scope-img"
+                    srcset="./images/courses.jpg 1x, ./images/courses@2x.jpg 2x"
                     src="./images/courses.jpg"
                     alt="Courses"
                     width="360"
@@ -214,6 +315,8 @@
               <a class="scope-link" href=""
                 ><div class="box-img">
                   <img
+                    class="scope-img"
+                    srcset="./images/stories.jpg 1x, ./images/stories@2x.jpg 2x"
                     src="./images/stories.jpg"
                     alt="Stories"
                     width="360"
@@ -235,6 +338,8 @@
               <a class="scope-link" href=""
                 ><div class="box-img">
                   <img
+                    class="scope-img"
+                    srcset="./images/food.jpg 1x, ./images/food@2x.jpg 2x"
                     src="./images/food.jpg"
                     alt="Food"
                     width="360"
@@ -256,6 +361,8 @@
               <a class="scope-link" href="">
                 <div class="box-img">
                   <img
+                    class="scope-img"
+                    srcset="/images/coffee.jpg 1x, ./images/coffe@2x.jpg 2x"
                     src="./images/coffee.jpg"
                     alt="Coffee"
                     width="360"
@@ -279,10 +386,11 @@
     </main>
     <footer class="page-footer">
       <div class="footer-container container">
-        <div class="footer-container-box">
+        <div class="footer-container-logo">
           <a href="./index.html" class="footer-logo link"
             >Web<span class="footer-accent">Studio</span></a
           >
+
           <p class="footer-text">
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
@@ -338,5 +446,6 @@
         </div>
       </div>
     </footer>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
